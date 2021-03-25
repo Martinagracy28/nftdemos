@@ -9,6 +9,7 @@ import Tokencreate from "./Tokencreate";
 import Printallimage from "./Printallimage";
 import Approveaddresspage from "./Approveaddresspage";
 import Salepage from "./Salepage";
+import Saleimagepage from "./Saleimagepage";
 
 function App() {
   return (
@@ -100,6 +101,15 @@ function App() {
               >
                 Sale-My Token Page
               </button>
+              <button
+                class="btn btn-info btn-block"
+                type="button"
+                onClick={() => {
+                  history.push("/Saleimagepage");
+                }}
+              >
+                Sales Image page    
+              </button>
 
 
 
@@ -125,6 +135,9 @@ function App() {
             </Route>
             <Route path="/Salepage">
               <Salepage />
+            </Route>
+            <Route path="/Saleimagepage">
+              <Saleimagepage />
             </Route>
           </Switch>
         </Router>
